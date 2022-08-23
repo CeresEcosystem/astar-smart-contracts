@@ -92,8 +92,8 @@ contract TestLocker is Ownable, ReentrancyGuard {
         fees.liquidityFeeOptionOne = 10;
         // 0.5%
         fees.liquidityFeeOptionTwo = 5;
-        // 20 CERES
-        fees.ceresFee = 20e18;
+        // 2 CERES
+        fees.ceresFee = 2e18;
         arthswapFactory = _arthswapFactory;
     }
 
