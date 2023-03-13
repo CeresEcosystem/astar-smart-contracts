@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: Apache License 2.0
 
 // This contract locks arthswap liquidity tokens. Used to give investors peace of mind a token team has locked liquidity
 // and that the arthswap tokens cannot be removed from arthswap until the specified unlock date has been reached.
@@ -37,7 +37,7 @@ interface IERCBurn {
     function balanceOf(address account) external view returns (uint256);
 }
 
-contract TestLocker is Ownable, ReentrancyGuard {
+contract CeresLiquidityLocker is Ownable, ReentrancyGuard {
     using SafeMath for uint256;
     using EnumerableSet for EnumerableSet.AddressSet;
 
@@ -92,8 +92,8 @@ contract TestLocker is Ownable, ReentrancyGuard {
         fees.liquidityFeeOptionOne = 10;
         // 0.5%
         fees.liquidityFeeOptionTwo = 5;
-        // 2 CERES
-        fees.ceresFee = 2e18;
+        // 20 CERES
+        fees.ceresFee = 20e18;
         arthswapFactory = _arthswapFactory;
     }
 

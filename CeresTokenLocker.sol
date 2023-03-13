@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: Apache License 2.0
 
 // This contract locks ERC-20 tokens. Used to give investors peace of mind a token team has team/marketing/other tokens
 // and that the tokens cannot be unlocked until the specified unlock date has been reached.
